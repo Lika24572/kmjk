@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Задание 6</title>
+<style>
+.container {
+  position: relative;
+  width: 400px; /* Задайте подходящую ширину */
+  height: 400px; /* Задайте подходящую высоту */
+}
+
+.square {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 200px; /* Ширина квадрата */
+  height: 200px; /* Высота квадрата */
+  background-color: turquoise; /* Цвет квадрата */
+  z-index: 1; /* Размещаем квадрат под изображениями */
+}
+
+.image1 {
+  position: absolute;
+  top: 0;
+  left: 200px;
+  width: 150px;   /* Укажите нужную ширину */
+  height: 150px;  /* Укажите нужную высоту */
+  z-index: 2; /* Размещаем изображение над квадратом */
+}
+
+.image2 {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  width: 100px; /* Укажите нужную ширину */
+  height: 130px; /* Укажите нужную высоту */
+  z-index: 2; /* Размещаем изображение над квадратом */
+}
+
+.image3 {
+  position: absolute;
+  top: 150px;
+  left: 20px;
+  width: 80px;
+  height: 110px;  /* Укажите нужную высоту */
+  z-index: 2; /* Размещаем изображение над квадратом */
+}
+
+.image4 {
+  position: absolute;
+  top: 200px;
+  left: 220px;
+  width: 80px;   /* Укажите нужную ширину */
+  height: 80px;  /* Укажите нужную высоту */
+  z-index: 2; /* Размещаем изображение над квадратом */
+}
+
+</style>
+</head>
+<body>
+
+<div class="container">
+  <div class="square"></div>
+  <img class="image2" src="pic/8.png" alt="Image 2">
+  <img class="image3" src="pic/9.png" alt="Image 3">
+  <img class="image4" src="pic/10.png" alt="Image 4">
+</div>
+
+</body>
+</html>
